@@ -1,0 +1,123 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '281023240797470');
+fbq('track', 'AddToCart');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=281023240797470&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+  </head>
+  <body class="started no_images vsc-initialized" cz-shortcut-listen="true">
+    <div class="wrapper">
+      <section class="quiz">
+        <center>
+          <div class="progress zero">
+            <div class="half"><a class="step first active" href="#" id="step1"><span>Paso</span> 1</a> <a class="step disabled" href="#" id="step2"><span>Paso</span> 2</a> <a class="step disabled" href="#" id="step3"><span>Paso</span> 3</a>
+              <a class="step disabled" href="#" id="step4"><span>Paso</span> 4</a>
+            </div>
+            <div class="half last">
+              <a class="step disabled last" href="#" id="step10"><span class="text">Final</span> <span class="number">5</span></a>
+            </div>
+          </div>
+        </center>
+          <div class="questions started male">
+            <div class="steps doImage no_points active" id="step1">
+              <p class="custom-width">Haga este test en apenas 30s y comience su transformación!</p>
+              <h3>¿Cuál es su genero?</h3>
+              <div class="two_by_two">
+                <div class="box three first even" data-sex="male-bg"><input id="sex" name="sex" type="radio" value="male"> <label>Masculino</label>
+                </div>
+                <div class="box three first even" data-sex="female-bg"><input id="sex" name="sex" type="radio" value="female">
+                  <label>Femenino</label>
+                </div>
+              </div>
+            </div>
+            <div class="steps doImage no_points" id="step2">
+              <h3>¿Qué edad tiene?</h3>
+              <div class="three_by_three">
+                <div class="box three first even"><input id="age" name="age" type="radio" value="20"> <label>Menos de 20 años</label>
+                </div>
+                <div class="box three odd"><input id="age" name="age" type="radio" value="30">
+                  <label>Entre 20 a 30 años</label>
+                </div>
+                <div class="box three even"><input id="age" name="age" type="radio" value="40">
+                  <label>Entre 30 a 40 años</label>
+                </div>
+                <div class="box three first odd"><input id="age" name="age" type="radio" value="50">
+                  <label>Entre 40 a 50 años</label>
+                </div>
+                <div class="box three even"><input id="age" name="age" type="radio" value="60">
+                  <label>Entre 50 a 60 años</label>
+                </div>
+                <div class="box three odd"><input id="age" name="age" type="radio" value="70">
+                  <label>Más de 60 años</label>
+                </div>
+              </div>
+            </div>
+            <div class="steps doImage points" id="step3">
+              <h3> ¿Usted acostumbra despertar cansada? </h3>
+              <div class="two_by_two">
+                <div class="box two first"><input id="body_type" name="body_type" type="radio" value="1">
+                  <label>Si, siempre despierto cansada</label>
+                </div>
+                <div class="box two"><input id="body_type" name="body_type" type="radio" value="2"> <label>Si, pero aveces despierto bién</label>
+                </div>
+                <div class="box two first"><input id="body_type" name="body_type" type="radio" value="3">
+                  <label>Difciilmente despierto cansada</label>
+                </div>
+                <div class="box two"><input id="body_type" name="body_type" type="radio" value="4">
+                  <label>Nunca despierto cansada</label>
+                </div>
+              </div>
+            </div>
+            <div class="steps doImage points" id="step4">
+              <h3 class="custom_width">¿Usted tiene la mente abierta para nuevos descubrimientos científicos en el campo de la salud?</h3>
+              <div class="two_by_two">
+                <div class="box two first"><input id="workout_time" name="workout_time" type="radio" value="1">
+                  <label>Si</label>
+                </div>
+                <div class="box two"><input id="workout_time" name="workout_time" type="radio" value="2">
+                  <label>No</label>
+                </div>
+              </div>
+            </div>
+            <div class="steps doImage points" id="step10">
+              <h3>Esta presentación secreta, tiene un límite de número de personas que pueden participar al mismo tiempo. ¿Tiene la intención de verlo hasta el final?</h3>
+              <div class="two_by_two" onclick="redirect()">
+                <div class="box two first"><input type="radio" value="1"> <label>Si</label></div>
+                <div class="box two"><input type="radio" value="2"> <label>No</label></div>
+              </div>
+            </div>
+          </div>
+      </section>
+    </div>
+    <footer class="zero">
+      <a href="#">© Copyright 2022</a>
+    </footer>
+    <script type="text/javascript">
+        function redirect() {
+            location.href = "https://jhonmendoza.com/landingpage-3" // SEU LINK AQUI
+        }
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.countdownTimer.min.js"></script>
+    <script src="js/new-custom.js"></script>
+  </body>
+</html>
