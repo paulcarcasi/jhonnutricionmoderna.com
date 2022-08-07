@@ -132,9 +132,10 @@ tr {
 
 .fb-comments-comment-actions likes {
   font-size: 13px;
-  background: url(https://cloudcode.site/likes.png);
+  background: url(../img/like.png);
   background-repeat: no-repeat;
-  padding-left: 43px;
+  background-size: contain;
+  padding-left: 26px;
   padding-right: 6px;
   padding-top: 3px;
   padding-bottom: 2px;
@@ -207,68 +208,137 @@ tr {
   width: 100%;
   max-width: 449px;
 }
+header {
+  color: white;
+  background-image: url("../img/bg.jpg");
+  background-color: rgba(0, 0, 0, 0.6);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: darken;
+  padding: 40px 0px;
+}
+
+.a-btn {
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  color: #2e82bc;
+  outline: 0;
+  line-height: 1;
+  text-align: center;
+  position: relative !important;
+  display: inline-block !important;
+  border-style: solid;
+  width: 100%;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-bottom: 10px;
+  padding: 22px 44px;
+  border-color: #ff5535;
+  border-width: 0px;
+  border-radius: 6px;
+  background: linear-gradient(to bottom, #ff6600 0%, #ff5535 100%);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.5);
+  text-decoration: none !important;
+}
+.span-btn {
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  margin: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+  position: relative;
+  z-index: 1;
+  padding: 0 15px;
+  white-space: normal;
+  font-size: 25px;
+  color: #ffffff;
+  font-family: Oswald;
+  font-weight: bold;
+  text-shadow: #000000 0px 1px 0px;
+  text-decoration: none;
+}
+.span-btn2 {
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+  position: relative;
+  z-index: 1;
+  margin: 0.2em 0 -0.5em;
+  font-size: 15px;
+  color: #f5e051;
+  font-family: Oswald;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: #000000 0px 1px 0px;
+}
+
+.oferta-container .oferta-especial-text,
+.oferta-container .oferta-especial-text span {
+  color: #37b13b;
+  font-family: "Oswald";
+  font-size: 38px;
+  font-weight: 700;
+}
+.oferta-container .oferta-especial-subtext {
+  color: black;
+  font-family: "Oswald";
+  font-size: 38px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.oferta-container .oferta-especial-subtext span {
+  text-decoration: line-through;
+}
+.oferta-container h4 {
+  color: #000000;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+.oferta-container h5 {
+  color: #000000;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+.oferta-container .container-white {
+  padding: 30px 20px;
+  background-color: white;
+  color: black;
+  border-radius: 6px;
+  margin-top: 30px;
+}
 
 @media (max-width: 768px) {
   .video-player {
     margin-top: 0 !important;
   }
+  h2 {
+    font-size: 22px;
+  }
+  .oferta-container h4 {
+    font-size: 16px;
+  }
+  .oferta-container h5 {
+    font-size: 16px;
+  }
+  .oferta-container .oferta-especial-text,
+  .oferta-container .oferta-especial-text span {
+    font-size: 20px;
+  }
+  .oferta-container .oferta-especial-subtext {
+    font-size: 24px;
+  }
 }
-
-.a-btn {
-      text-decoration: none;
-      -webkit-font-smoothing: antialiased;
-      margin: 0;
-      border: 0; 
-      font: inherit; 
-      vertical-align: baseline;
-      color: #2e82bc; 
-      outline: 0; 
-      line-height: 1; 
-      text-align: center; 
-      position:relative!important; display: inline-block!important;
-      border-style: solid; 
-      width: 100%; padding-left: 0!important; padding-right: 0!important; 
-      margin-bottom: 10px; 
-      padding: 22px 44px; border-color: #ff5535; border-width: 0px; 
-      border-radius: 6px; 
-      background: linear-gradient(to bottom, #ff6600 0%, #ff5535 100%); 
-      box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.5); 
-      text-decoration: none!important;
-    }
-    .span-btn {
-      text-decoration: none;
-      -webkit-font-smoothing: antialiased; 
-      text-align: center;
-      margin: 0; 
-      border: 0; 
-      font: inherit;
-      vertical-align: baseline;
-      display: block; 
-      position: relative; 
-      z-index: 1; 
-      padding: 0 15px; 
-      white-space: normal; 
-      font-size: 25px;
-      color: #ffffff; 
-      font-family: Oswald; 
-      font-weight: bold; 
-      text-shadow: #000000 0px 1px 0px;
-      text-decoration: none;
-    }
-    .span-btn2 {
-      -webkit-font-smoothing: antialiased; 
-      text-align: center;
-      padding: 0; border: 0;
-      font: inherit; 
-      vertical-align: baseline; 
-      display: block; 
-      position: relative;
-      z-index: 1; 
-      margin: .2em 0 -.5em; 
-      font-size: 15px; 
-      color: #f5e051; 
-      font-family: Cabin; 
-      font-weight: bold; 
-      font-style: italic;
-      text-shadow: #000000 0px 1px 0px;
-    }
