@@ -78,7 +78,7 @@ function onContinueBtn() {
   fillQuizQuestions();
 }
 function onFinishResults() {
-  window.location.href = "https://jhonnutricionmoderna.com/resumen";
+  window.location.href = "https://jhonnutricionmoderna.com/resumen-4";
 }
 function onBackBtn() {
   stepQuiz -= 1;
