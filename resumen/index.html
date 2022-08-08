@@ -50,9 +50,7 @@
             <!-- Headline -->
             <h2 class="my-4">
               <b
-                >NUEVO <u>DESCUBRIMIENTO TROPICAL</u> DE 6 INGREDIENTES DERRITE
-                GRASA
-                <p style="color: rgb(255, 0, 128)">+37K EN 21 DÍAS</p></b
+                >MEZCLA TROPICAL<span style="color: rgb(255, 0, 128)"> ACELERA METABOLISMO Y DISUELVE</span> <span style="color: #83FF00">+27 KG DE GRASA EN 21 DÍAS</span></b
               >
             </h2>
             <p style="color: rgb(255, 206, 0)">
@@ -63,16 +61,42 @@
             </p>
 
             <!-- VSL -->
-            <script type="text/javascript" id="scr_62715b2b3ff084000a3209bc">
-              var s = document.createElement("script");
-              (s.src =
-                "https://scripts.converteai.net/ec3f9993-53f1-471b-8ea1-f3a6062bb21f/players/62715b2b3ff084000a3209bc/player.js"),
-                (s.async = !0),
-                document.head.appendChild(s);
-            </script>
+           <div id="vid_62ef4425deb291000ce99aeb" style="position:relative;width:100%;padding: 56.25% 0 0;"><img id="thumb_62ef4425deb291000ce99aeb" src="https://images.converteai.net/ec3f9993-53f1-471b-8ea1-f3a6062bb21f/players/62ef4425deb291000ce99aeb/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_62ef4425deb291000ce99aeb" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_62ef4425deb291000ce99aeb">var s=document.createElement("script");s.src="https://scripts.converteai.net/ec3f9993-53f1-471b-8ea1-f3a6062bb21f/players/62ef4425deb291000ce99aeb/player.js",s.async=!0,document.head.appendChild(s);</script>
+
+           <style>.delay {display: none;}</style>
+<script>
+const DELAY_TIME_IN_SECONDS = 1250;
+const DELAY_ELEMENTS_CLASS = 'delay';
+
+let player;
+
+function showElements(className, value) {
+    for (const element of document.getElementsByClassName(className)) {
+        element.style.display = value;
+    }
+}
+
+function showElementsAfterDelay() {
+  const time = Math.floor(player.video.currentTime);
+  if (time >= DELAY_TIME_IN_SECONDS && player.paused == false) {
+    showElements(DELAY_ELEMENTS_CLASS, 'block');
+  }
+}
+
+window.onload = () => {
+    showElements(DELAY_ELEMENTS_CLASS, 'none');
+    const addFunctionShowElementsAfterDelay = setInterval(() => {
+      if (window.smartplayer.instances[0].mounted) {
+        player = window.smartplayer.instances[0];
+        player.events.events.timeupdate.push(showElementsAfterDelay);
+        clearInterval(addFunctionShowElementsAfterDelay);
+      }
+    }, 100)
+}
+</script>
 
             <!-- Botão 1 -->
-            <div id="cta1" class="mt-4 oferta-container d-none">
+            <div id="cta1" class="mt-4 oferta-container delay">
               <p>
                 Ingresa ahora mismo con el 90% de descuento, Últimos cupos
                 disponibles
@@ -549,7 +573,7 @@
               </div>
             </div>
             <!-- Botão 2 -->
-            <div id="cta2" class="mt-4 d-none">
+            <div id="cta2" class="mt-4 delay">
               <a
                 href="https://pay.hotmart.com/H68864624C?checkoutMode=10&src=npag1&hideBillet=1"
                 class="a-btn"
@@ -572,12 +596,6 @@
         <a href="/politicy.html" class="text-white">Políticas de Privacidad</a>
       </div>
     </footer>
-    <script type="text/javascript">
-      setTimeout(() => {
-        document.getElementById("cta1").classList.remove("d-none");
-        document.getElementById("cta2").classList.remove("d-none");
-      }, 10000); // 10 segundos
-    </script>
     <script src="../assets/js/com.js"></script>
 
     <style>
